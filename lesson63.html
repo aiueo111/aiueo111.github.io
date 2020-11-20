@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+        }
+        .container1 {
+            flex-basis: 20%;
+            background-color: orchid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container2 {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 100%;
+        }
+        .inside-container-1 {
+            flex-basis: 20%;
+            background-color: violet;
+            text-align: center;
+        }
+        .inside-container-2 {
+            flex-basis: 100%;
+            display: flex;
+        }
+        .container-col-1 {
+            display: flex;
+            flex-direction: row;
+            flex-basis: 50%;
+            background-color: palevioletred;
+        } 
+        .container-col-2 {
+            display: flex;
+            flex-direction: row;
+            flex-basis: 50%;
+            background-color: indianred;
+        } 
+    </style>
+</head>
+<body>
+    <div class="container1">
+        Меню
+    </div>
+    <div class="container2">
+        <div class="inside-container-1">
+            Заголовок
+        </div>
+        <div class="inside-container-2">
+            <div class="container-col-1">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut reprehenderit magni est accusantium error, expedita sit commodi nisi sapiente vero provident, esse dolor corporis veritatis eius quae, assumenda atque. Eaque.
+            </div>
+            <div class="container-col-2">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error doloremque quisquam reprehenderit unde, quidem perferendis consequuntur excepturi repellat omnis dolores dolore doloribus aliquam porro alias, eius voluptas nesciunt earum vero?
+            </div>
+        </div>
+    </div>
+</body>
+</html>
