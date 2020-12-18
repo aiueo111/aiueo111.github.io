@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1:hover {
+            font-size: 3em;
+        }
+        input[type=text] {
+            background-color: tomato;
+        }
+        input[type=text]:focus {
+            background-color: turquoise;
+        }
+        input[type=submit] {
+            background-color: violet;
+        }
+        input[type=submit]:focus {
+            background-color: skyblue;
+        }
+        a:active {
+            background-color: slateblue;
+        }
+        a:link {
+            color: red;
+        }
+        .block {
+            width: 200px;
+            height: 200px;
+            color: purple;
+            background-color: paleturquoise;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            white-space: nowrap;
+            position: relative;
+        }
+        .block::before {
+            content: '';
+            position: absolute;
+            width: 90%;
+            height: 5px;
+            background-color: palevioletred;
+            top: 10%;
+        }
+        .block::after {
+            content: '';
+            position: absolute;
+            width: 90%;
+            height: 5px;
+            background-color: salmon;
+            bottom: 10%;
+        }
+        .popup {
+            display: inline-block;
+            font-size: 2.25em;
+            padding: 1em;
+            color: seagreen;
+            position: relative;
+            border-radius: 5px;
+            background-color: mediumturquoise;
+        }
+        .popup:hover::after {
+            content: 'VSPLIVAUSHEE OKNOOOOOOO';
+            position: absolute;
+            padding: 1em;
+            top: 50%;
+            left: 25%;
+            border-radius: 5px;
+            white-space: nowrap;
+            background-color: midnightblue;
+            color: slateblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        haha
+    </h1>
+    <form action="">
+        <input type="text" name="" id="">
+        <input type="submit" value="POISK">
+    </form>
+    <a href="#">ssilka</a>
+    <a href="actiiiive.html">НЕ ПОСЕЩЕНА</a>
+    <a href="not_active.html">посещена.....</a>
+    <div class="block">PROSTO TEXT</div>
+    <div class="popup">NAVEDI KURSOR!!!!!</div>
+</body>
+</html>
